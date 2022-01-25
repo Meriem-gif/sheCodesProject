@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Final</title>
+    <style>
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background-image: linear-gradient(
+          to right top,
+          #ffcbcb,
+          #ffc7c7,
+          #ffc3c3,
+          #ffbfbf,
+          #ffbbbb,
+          #f5b1bb,
+          #e8a7bb,
+          #da9fbb,
+          #b593ba,
+          #8b88b1,
+          #637da0,
+          #407088
+        );
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      .copyright {
+        color: #407088;
+        margin: 16px;
+      }
+      .submit {
+        display: block;
+        margin: 5px auto;
+        padding: 10px;
+        width: 150px;
+        border: 1px solid #fff;
+        background-color: #407088;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      .submit:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        margin-top: -5px;
+        width: 200px;
+      }
+      body {
+        background-color: #ddd;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 28px;
+        margin: 30px 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 18px;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 14px;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        margin: 5px;
+      }
+      a {
+        color: #407088;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1><em>I love my Tunisia🇹🇳 </em></h1>
+      <h2>Sidi Bou Said /سيدي بو سعيد</h2>
+
+      <hr />
+      <div class="div container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/024/429/original/xoZi6XOnmt-fTKuqo6jgUhOn8rpI4Z2SoRaGCRWJsU8.jpeg?1641666731"
+          alt="SIDIBOUSAID-PICTURE"
+        />
+        <hr />
+        <p>
+          This article is about the city in Tunisia. For the indie-rock band .
+          For the religious figure after whom this place was named, see Abu Said
+          al-Baji. Sidi Bou Said (Arabic: سيدي بو سعيد ) is a town in northern
+          Tunisia located about 20 km from the capital, Tunis. Named for a
+          religious figure who lived there, Abu Said al-Baji, it was previously
+          called Jabal el-Menar. The town itself is a tourist attraction and is
+          known for its extensive use of blue and white. It can be reached by a
+          TGM train, which runs from Tunis to La Marsa.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Sidi_Bou_Said" target="_blank">
+          ➨ Read more...</a
+        >
+      </div>
+      <div class="div footer">
+        <button class="submit">Visit Tunisia</button>
+        <p class="copyright">This Page is coded by Meriem Amdouni-2022</p>
+      </div>
+    </div>
+    <script>
+      let button = document.querySelector(".submit");
+      function visit() {
+        let Name = prompt("What is Your Name?");
+
+        if (Name == "Meriem") {
+          alert("Thank you " + Name + " for this amazing article");
+        } else {
+          alert(
+            "Thanks you," +
+              Name +
+              " , for reading this article .I hope you can visit Tunisia soon...!"
+          );
+        }
+      }
+
+      button.addEventListener("click", visit);
+    </script>
+  </body>
+</html>
